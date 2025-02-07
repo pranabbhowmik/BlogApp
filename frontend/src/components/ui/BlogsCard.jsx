@@ -5,7 +5,7 @@ import laptop from "../../assets/laptop.jfif";
 import jump from "../../assets/jump.jfif";
 import calling from "../../assets/callwithsomeone.jfif";
 import chocklate from "../../assets/choclate.jfif";
-
+import { Link } from "react-router-dom";
 const posts = [
   {
     id: 1,
@@ -95,9 +95,11 @@ function BlogCard() {
     <section className="max-w-7xl mx-auto px-4 py-12">
       <div className="flex justify-between items-center mb-8">
         <h2 className="text-2xl md:text-3xl font-bold">Popular Post</h2>
-        <button className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition-colors">
-          View All
-        </button>
+        <Link to="/blog">
+          <button className="bg-purple-500 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition-colors">
+            View All
+          </button>
+        </Link>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {posts.map((post) => (

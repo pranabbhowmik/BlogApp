@@ -18,20 +18,17 @@ const useLogin = () => {
       });
 
       const data = response.data;
-      console.log("Login response:", data);
-
       if (response.status === 200) {
-        console.log("Login Success");
         toast.success("Login Success");
         setAuthUser(data.token);
         navigate("/");
       }
     } catch (error) {
       console.error("Login Error:", error);
+      toast.error(error.response.data.message);
       if (error.response) {
         console.error("Server responded with:", error.response.data);
       }
-      toast.error("Login Failed");
     }
   };
 

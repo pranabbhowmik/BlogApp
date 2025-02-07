@@ -1,5 +1,6 @@
 import React, { useState, useCallback } from "react";
 import { PlusCircle as CirclePlus, Upload, X } from "lucide-react";
+import { set } from "mongoose";
 
 function BlogPost() {
   const [title, setTitle] = useState("");
@@ -7,6 +8,7 @@ function BlogPost() {
   const [date, setDate] = useState("");
   const [image, setImage] = useState(null);
   const [isDragging, setIsDragging] = useState(false);
+  const [category, setCategory] = useState("Technology");
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
@@ -50,6 +52,7 @@ function BlogPost() {
     setTitle("");
     setDescription("");
     setDate("");
+    setCategory("Technology");
     setImage(null);
   };
 
@@ -78,6 +81,24 @@ function BlogPost() {
             className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
             required
           />
+        </div>
+
+        <div className="mb-4">
+          <label className="block text-sm font-medium text-gray-700 mb-1">
+            Category
+          </label>
+          <select
+            value={category}
+            onChange={(e) => setCategory(e.target.value)}
+            className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500"
+            required
+          >
+            <option value="Technology">Technology</option>
+            <option value="Health">Health</option>
+            <option value="Education">Education</option>
+            <option value="Entertainment">Entertainment</option>
+            <option value="Business">Business</option>
+          </select>
         </div>
 
         <div className="mb-4">
@@ -212,6 +233,7 @@ function BlogPost() {
             {description || "Your description will appear here..."}
           </p>
           <p className="text-sm text-gray-500">{date || "Select a date"}</p>
+          <p className="text-gray-600 mb-2">Category: {category}</p>
         </div>
       </div>
     </div>

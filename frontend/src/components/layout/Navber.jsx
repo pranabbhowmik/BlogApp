@@ -1,16 +1,22 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useAuthContext } from "../../context/AuthContext";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { authUser, setAuthUser } = useAuthContext();
+
+  const handleLogout = () => {
+    setAuthUser(null); // Clear auth state
+  };
 
   return (
     <header className="w-full bg-[#8A3FFC] fixed top-0 left-0 right-0 z-50">
       <div className="flex items-center justify-between px-4 py-4 lg:px-8">
         <div className="flex items-center">
-          <a href="/" className="text-white text-2xl font-bold">
+          <Link to="/" className="text-white text-2xl font-bold">
             Zarrin
-          </a>
+          </Link>
         </div>
 
         <nav
@@ -24,12 +30,24 @@ function Navbar() {
           <Link to="/about" className="text-white hover:text-purple-200">
             About
           </Link>
-          <Link to="/signup" className="text-white hover:text-purple-200">
-            Signup
-          </Link>
-          <Link to="/login" className="text-white hover:text-purple-200">
-            Login
-          </Link>
+
+          {!authUser ? (
+            <>
+              <Link to="/signup" className="text-white hover:text-purple-200">
+                Signup
+              </Link>
+              <Link to="/login" className="text-white hover:text-purple-200">
+                Login
+              </Link>
+            </>
+          ) : (
+            <button
+              onClick={handleLogout}
+              className="text-white hover:text-purple-200"
+            >
+              Logout
+            </button>
+          )}
 
           <Link to="/contact">
             <button className="bg-white text-[#8A3FFC] px-6 py-2 rounded-full hover:bg-purple-100 transition-colors">
