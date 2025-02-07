@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import useLogin from "../hooks/useLogin";
 
 function Login() {
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const { login } = useLogin(); // Destructure the login function
+
+  const handelsubmit = async (e) => {
+    e.preventDefault();
+    await login(email, password); // Call the login function directly
+  };
+
   return (
     <div className="flex flex-col font-robotoMono items-center justify-center sm:min-h-screen -mt-2 sm:-mt-20 ">
       <div className="grid grid-cols-1 md:grid-cols-2 bg-white shadow-lg rounded-lg overflow-hidden w-full">
@@ -49,7 +60,9 @@ function Login() {
 
         {/* Right Section */}
         <div className="flex flex-col justify-center items-center bg-gray-50 p-6 md:p-10">
-          <form className="w-full max-w-sm">
+          <form className="w-full max-w-sm" onSubmit={handelsubmit}>
+            {" "}
+            {/* Changed onClick to onSubmit */}
             <div className="mb-4">
               <label
                 htmlFor="email"
@@ -62,9 +75,10 @@ function Login() {
                 type="email"
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
-
             <div className="mb-6">
               <label
                 htmlFor="password"
@@ -77,6 +91,8 @@ function Login() {
                 type="password"
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300"
                 placeholder="Create a password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <button className="before:ease relative h-12 w-full mt-3 bg-blue-500 overflow-hidden border border-black text-white shadow-2xl transition-all rounded-xl before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-[#8A3FFC]  before:duration-300  hover:shadow-[#8A3FFC] hover:before:h-64 hover:text-white hover:before:-translate-y-32">

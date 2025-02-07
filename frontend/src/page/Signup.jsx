@@ -1,7 +1,21 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
+import useSignup from "../hooks/useSignup";
 
 const Signup = () => {
+  const [fullname, setFullname] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+  const [password, setPassword] = useState("");
+
+  const { signup } = useSignup();
+
+  const handelSignup = async (e) => {
+    e.preventDefault();
+    await signup(email, password, phone, fullname);
+  };
+
+  // smooth scorll to top
   useEffect(() => {
     // Start at the bottom of the page
     window.scrollTo(0, document.body.scrollHeight);
@@ -61,7 +75,7 @@ const Signup = () => {
 
         {/* Right Section */}
         <div className="flex flex-col justify-center items-center bg-gray-50 p-6 md:p-10">
-          <form className="w-full max-w-sm">
+          <form className="w-full max-w-sm" onSubmit={handelSignup}>
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -74,6 +88,8 @@ const Signup = () => {
                 type="text"
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300"
                 placeholder="Enter your full name"
+                value={fullname}
+                onChange={(e) => setFullname(e.target.value)}
               />
             </div>
             <div className="mb-4">
@@ -88,6 +104,8 @@ const Signup = () => {
                 type="email"
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="mb-4">
@@ -102,6 +120,8 @@ const Signup = () => {
                 type="text"
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300"
                 placeholder="Enter your phone number"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value)}
               />
             </div>
             <div className="mb-6">
@@ -116,6 +136,8 @@ const Signup = () => {
                 type="password"
                 className="w-full px-4 py-2 border rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-yellow-300"
                 placeholder="Create a password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
               />
             </div>
             <button className="before:ease relative h-12 w-full mt-3 bg-blue-500 overflow-hidden border border-black text-white shadow-2xl transition-all rounded-xl before:absolute before:top-1/2 before:h-0 before:w-64 before:origin-center before:-translate-x-20 before:rotate-45 before:bg-[#8A3FFC]  before:duration-300  hover:shadow-[#8A3FFC] hover:before:h-64 hover:text-white hover:before:-translate-y-32">
