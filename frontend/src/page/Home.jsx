@@ -3,8 +3,7 @@ import React, { useEffect } from "react";
 import PopulerBlog from "../components/ui/PopulerBlog";
 import LandingPage from "../components/ui/LandingPage";
 import Subscribe from "../components/ui/Subscribe";
-import BlogCard from "../components/ui/BlogsCard";
-import PostCard from "../components/ui/PostCard";
+
 import PopularPosts from "./Popularposts";
 
 const Home = () => {
