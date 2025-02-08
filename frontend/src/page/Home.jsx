@@ -4,6 +4,8 @@ import PopulerBlog from "../components/ui/PopulerBlog";
 import LandingPage from "../components/ui/LandingPage";
 import Subscribe from "../components/ui/Subscribe";
 import BlogCard from "../components/ui/BlogsCard";
+import PostCard from "../components/ui/PostCard";
+import PopularPosts from "./Popularposts";
 
 const Home = () => {
   useEffect(() => {
@@ -22,7 +24,7 @@ const Home = () => {
     <div className="min-h-screen w-full px-4scroll-smooth">
       <LandingPage />
       <PopulerBlog />
-      <BlogCard />
+      <PopularPosts />
       <Subscribe />
     </div>
   );

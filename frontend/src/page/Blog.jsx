@@ -4,19 +4,20 @@ import Subscribe from "../components/ui/Subscribe";
 
 function Blog() {
   const [searchQuery, setSearchQuery] = useState("");
+  const [user, setUser] = useState(null); // Added this line
 
   const handleSearchChange = (e) => {
     setSearchQuery(e.target.value.toLowerCase());
   };
+
   useEffect(() => {
     const storedUser = localStorage.getItem("authUser");
     if (storedUser) {
       const parsedUser = JSON.parse(storedUser);
-      setUser(parsedUser.user);
+      setUser(parsedUser.user); // Now setUser is defined
     }
     window.scrollTo(0, document.body.scrollHeight);
 
-    // Smoothly scroll to the top
     setTimeout(() => {
       window.scrollTo({
         top: 0,

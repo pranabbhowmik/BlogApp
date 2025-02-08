@@ -3,6 +3,7 @@ import vrimage from "../../assets/vrglass.jfif";
 import seabith from "../../assets/seabich.jfif";
 import football from "../../assets/football.jfif";
 import domore from "../../assets/domore.jfif";
+import { Link } from "react-router-dom";
 
 function PopulerBlog() {
   const posts = [
@@ -56,9 +57,11 @@ function PopulerBlog() {
         <h2 className="text-2xl md:text-3xl font-bold text-gray-900">
           Our Recent Post
         </h2>
-        <button className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors">
-          View All
-        </button>
+        <Link to="/blog">
+          <button className="px-4 py-2 bg-purple-600 text-white rounded-md hover:bg-purple-700 transition-colors">
+            View All
+          </button>
+        </Link>
       </div>
 
       {/* Featured Post */}
