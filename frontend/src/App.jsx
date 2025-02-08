@@ -10,6 +10,9 @@ import BlogDetails from "./page/BlogDetails";
 import Signup from "./page/Signup";
 import Login from "./page/Login";
 import BlogPost from "./page/BlogPost";
+import BlogUpdate from "./page/BlogUpdate";
+import Account from "./page/Account";
+import ProtectedRoute from "./components/ProtectedRoute"; // Import ProtectedRoute
 
 function App() {
   const router = createBrowserRouter([
@@ -17,41 +20,43 @@ function App() {
       path: "/",
       element: <AllLayout />,
       children: [
-        {
-          path: "/",
-          element: <Home />,
-        },
-        {
-          path: "/about",
-          element: <About />,
-        },
-        {
-          path: "/contact",
-          element: <Contact />,
-        },
-        {
-          path: "/blog",
-          element: <Blog />,
-        },
-        {
-          path: "/blog/:id",
-          element: <BlogDetails />,
-        },
-        {
-          path: "/login",
-          element: <Login />,
-        },
-        {
-          path: "/signup",
-          element: <Signup />,
-        },
+        { path: "/", element: <Home /> },
+        { path: "/about", element: <About /> },
+        { path: "/contact", element: <Contact /> },
+        { path: "/blog", element: <Blog /> },
+        { path: "/blog/:id", element: <BlogDetails /> },
+        { path: "/login", element: <Login /> },
+        { path: "/signup", element: <Signup /> },
+
+        // ✅ Protected Routes
         {
           path: "/post",
-          element: <BlogPost />,
+          element: (
+            <ProtectedRoute>
+              <BlogPost />
+            </ProtectedRoute>
+          ),
+        },
+        {
+          path: "/edit-blog/:id",
+          element: (
+            <ProtectedRoute>
+              <BlogUpdate />
+            </ProtectedRoute>
+          ),
+        },
+        {
+          path: "/account",
+          element: (
+            <ProtectedRoute>
+              <Account />
+            </ProtectedRoute>
+          ),
         },
       ],
     },
   ]);
+
   return <RouterProvider router={router} />;
 }
 

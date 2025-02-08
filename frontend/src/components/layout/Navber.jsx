@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useAuthContext } from "../../context/AuthContext";
+import BottomNav from "../ui/ButtomNav";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -41,12 +42,17 @@ function Navbar() {
               </Link>
             </>
           ) : (
-            <button
-              onClick={handleLogout}
-              className="text-white hover:text-purple-200"
-            >
-              Logout
-            </button>
+            <>
+              <Link to="/post" className="text-white hover:text-purple-200">
+                Post Blog
+              </Link>
+              <button
+                onClick={handleLogout}
+                className="text-white hover:text-purple-200"
+              >
+                Logout
+              </button>
+            </>
           )}
 
           <Link to="/contact">
@@ -75,6 +81,7 @@ function Navbar() {
           </svg>
         </button>
       </div>
+      <BottomNav />
     </header>
   );
 }

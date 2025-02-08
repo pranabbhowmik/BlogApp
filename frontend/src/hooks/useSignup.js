@@ -22,7 +22,7 @@ const useSignup = () => {
 
       if (response.status === 201) {
         console.log("Signup Success");
-        toast.success("Signup Success");
+        toast.success("Welcome to Zarrin!");
         setAuthUser(data.token);
         navigate("/");
       }

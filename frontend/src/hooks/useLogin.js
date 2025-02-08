@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 const useLogin = () => {
   const { setAuthUser } = useAuthContext();
-  const navigate = useNavigate(); // Corrected this line
+  const navigate = useNavigate();
   const url = import.meta.env.VITE_API_URL;
 
   const login = async (email, password) => {
@@ -19,13 +19,19 @@ const useLogin = () => {
 
       const data = response.data;
       if (response.status === 200) {
-        toast.success("Login Success");
-        setAuthUser(data.token);
+        toast.success("Welcome back!");
+        setAuthUser({
+          token: data.token,
+          user: data.user, // { name, email, etc. }
+        });
+        localStorage.setItem("authUser", JSON.stringify(data)); // Save user data to localStorage
         navigate("/");
       }
     } catch (error) {
       console.error("Login Error:", error);
-      toast.error(error.response.data.message);
+      toast.error(
+        error.response?.data?.message || "Login failed. Please try again."
+      );
       if (error.response) {
         console.error("Server responded with:", error.response.data);
       }
