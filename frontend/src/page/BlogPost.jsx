@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { PlusCircle as CirclePlus, Upload, X } from "lucide-react";
 import useBloge from "../hooks/useBloge";
 
@@ -43,6 +43,18 @@ function BlogPost() {
       console.log("Please upload an image file.");
     }
   };
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
+  }, []);
 
   return (
     <div className="min-h-screen bg-gradient-to-br mt-16 from-purple-100 to-indigo-200 p-4 sm:p-6 md:min-h-full xl:min-h-screen flex flex-col md:flex-row items-start justify-center gap-6">

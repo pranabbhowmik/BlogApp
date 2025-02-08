@@ -16,6 +16,15 @@ function BlogDetails() {
       }
     };
     fetchBlog();
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
   }, [id]);
 
   if (!post) return <p className="text-center mt-10">Loading...</p>;
@@ -41,7 +50,7 @@ function BlogDetails() {
 
       <div className="prose max-w-none">
         <p className="text-gray-700 mb-6">{post.content}</p>
-        <p className="text-gray-500 text-sm">By {post.author}</p>
+        <p className="text-purple-600 text-sm">By {post.author}</p>
       </div>
     </article>
   );

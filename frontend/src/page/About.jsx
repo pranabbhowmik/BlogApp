@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import meeting from "../assets/meeting.jpg";
 import Subscribe from "../components/ui/Subscribe";
 
 function About() {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
+  }, []);
   const steps = [
     {
       number: "01",

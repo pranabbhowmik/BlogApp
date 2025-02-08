@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
 import useLogin from "../hooks/useLogin";
 
@@ -12,6 +12,18 @@ function Login() {
     e.preventDefault();
     await login(email, password); // Call the login function directly
   };
+  useEffect(() => {
+    // Start at the bottom of the page
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
+  }, []);
 
   return (
     <div className="flex flex-col font-robotoMono items-center justify-center sm:min-h-screen -mt-2 sm:-mt-20 ">

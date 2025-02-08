@@ -6,6 +6,8 @@ import {
   Store,
   UserCircle,
   HelpCircle,
+  Newspaper,
+  HeartHandshake,
 } from "lucide-react";
 import { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
@@ -22,6 +24,15 @@ function Account() {
       const parsedUser = JSON.parse(storedUser);
       setUser(parsedUser.user);
     }
+    window.scrollTo(0, document.body.scrollHeight);
+
+    // Smoothly scroll to the top
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
+    }, 0);
   }, []);
 
   const handleLogout = () => {
@@ -65,11 +76,8 @@ function Account() {
                        hover:bg-gray-50 rounded-lg transition-colors duration-200"
             >
               <div className="flex items-center gap-3">
-                <Store className="w-5 h-5 text-gray-700" />
-                <span>My stores</span>
-                <span className="bg-green-500 text-white text-xs px-2 py-0.5 rounded-full">
-                  2
-                </span>
+                <Newspaper className="w-5 h-5 text-gray-700" />
+                <span>My Blogs</span>
               </div>
               <ChevronRight className="w-5 h-5 text-gray-400" />
             </button>
@@ -110,33 +118,14 @@ function Account() {
                 ></div>
               </label>
             </div>
-            <div className="flex items-center justify-between p-3">
-              <div className="flex items-center gap-3">
-                <UserCircle className="w-5 h-5 text-gray-700" />
-                <span>Face ID</span>
-              </div>
-              <label className="relative inline-flex items-center cursor-pointer">
-                <input
-                  type="checkbox"
-                  className="sr-only peer"
-                  defaultChecked
-                />
-                <div
-                  className="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer 
-                            peer-checked:after:translate-x-full peer-checked:after:border-white 
-                            after:content-[''] after:absolute after:top-[2px] after:left-[2px] 
-                            after:bg-white after:border-gray-300 after:border after:rounded-full 
-                            after:h-5 after:w-5 after:transition-all peer-checked:bg-green-500"
-                ></div>
-              </label>
-            </div>
+
             <button
               className="w-full flex items-center justify-between p-3 
                        hover:bg-gray-50 rounded-lg transition-colors duration-200"
             >
               <div className="flex items-center gap-3">
-                <KeyRound className="w-5 h-5 text-gray-700" />
-                <span>PIN Code</span>
+                <HeartHandshake className="w-5 h-5 text-gray-700" />
+                <span>Help</span>
               </div>
               <ChevronRight className="w-5 h-5 text-gray-400" />
             </button>
