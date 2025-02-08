@@ -23,8 +23,6 @@ function App() {
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
         { path: "/contact", element: <Contact /> },
-        { path: "/blog", element: <Blog /> },
-        { path: "/blog/:id", element: <BlogDetails /> },
         { path: "/login", element: <Login /> },
         { path: "/signup", element: <Signup /> },
 
@@ -34,6 +32,22 @@ function App() {
           element: (
             <ProtectedRoute>
               <BlogPost />
+            </ProtectedRoute>
+          ),
+        },
+        {
+          path: "/blog/:id",
+          element: (
+            <ProtectedRoute>
+              <BlogDetails />
+            </ProtectedRoute>
+          ),
+        },
+        {
+          path: "/blog",
+          element: (
+            <ProtectedRoute>
+              <Blog />
             </ProtectedRoute>
           ),
         },
