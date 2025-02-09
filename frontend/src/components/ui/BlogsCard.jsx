@@ -2,10 +2,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import useGetblog from "../../hooks/useGetblog";
 import PostCard from "./PostCard";
+import Loadinganimation from "./Loadinganimation";
 
 function BlogCard({ searchTerm }) {
   const { Getblog } = useGetblog();
   const [posts, setPosts] = useState([]);
+  const [isLoading, setIsLoading] = useState(true); // Track loading state
 
   useEffect(() => {
     const fetchBlogs = async () => {
@@ -13,6 +15,7 @@ function BlogCard({ searchTerm }) {
       if (data) {
         setPosts(data.blogs || []);
       }
+      setIsLoading(false); // Set loading to false after data is fetched
     };
 
     fetchBlogs();
@@ -37,13 +40,17 @@ function BlogCard({ searchTerm }) {
           </button>
         </Link>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-        {filteredPosts.length > 0 ? (
-          filteredPosts.map((post) => <PostCard key={post._id} post={post} />)
-        ) : (
-          <p className="text-gray-500">No blogs found.</p>
-        )}
-      </div>
+      {isLoading ? (
+        <Loadinganimation />
+      ) : (
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          {filteredPosts.length > 0 ? (
+            filteredPosts.map((post) => <PostCard key={post._id} post={post} />)
+          ) : (
+            <p className="text-gray-500">No blogs found.</p>
+          )}
+        </div>
+      )}
     </section>
   );
 }

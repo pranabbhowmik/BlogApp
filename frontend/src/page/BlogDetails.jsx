@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import useGetblog from "../hooks/useGetblog";
+import Loading from "../components/ui/Loading";
 
 function BlogDetails() {
   const { id } = useParams();
@@ -9,26 +10,20 @@ function BlogDetails() {
   const [comments, setComments] = useState([]); // Add state to hold comments
   const [newComment, setNewComment] = useState(""); // State to hold the new comment
   const [showAllComments, setShowAllComments] = useState(false); // To toggle comment visibility
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
     const fetchBlog = async () => {
+      setIsLoading(true); // Ensure it's set to true at the start of the data fetching
       const data = await Getblog();
       if (data) {
         const foundPost = data.blogs.find((blog) => blog._id === id);
         setPost(foundPost);
-        setComments(foundPost.comments || []); // Assuming the post has a `comments` field
+        setComments(foundPost.comments || []);
       }
+      setIsLoading(false); // Set it to false after fetching the data
     };
     fetchBlog();
-    window.scrollTo(0, document.body.scrollHeight);
-
-    // Smoothly scroll to the top
-    setTimeout(() => {
-      window.scrollTo({
-        top: 0,
-        behavior: "smooth",
-      });
-    }, 0);
   }, [id]);
 
   const handleCommentSubmit = (e) => {
@@ -47,7 +42,9 @@ function BlogDetails() {
     }
   };
 
-  if (!post) return <p className="text-center mt-10">Loading...</p>;
+  if (isLoading) {
+    return <Loading />; // Show the loading animation
+  }
 
   const commentsToShow = showAllComments ? comments : comments.slice(0, 2);
 

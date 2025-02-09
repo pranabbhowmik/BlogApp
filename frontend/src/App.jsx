@@ -13,18 +13,21 @@ import BlogPost from "./page/BlogPost";
 import BlogUpdate from "./page/BlogUpdate";
 import Account from "./page/Account";
 import ProtectedRoute from "./components/ProtectedRoute"; // Import ProtectedRoute
+import NotFound from "./page/Notfound";
 
 function App() {
   const router = createBrowserRouter([
     {
       path: "/",
       element: <AllLayout />,
+
       children: [
         { path: "/", element: <Home /> },
         { path: "/about", element: <About /> },
         { path: "/contact", element: <Contact /> },
         { path: "/login", element: <Login /> },
         { path: "/signup", element: <Signup /> },
+        { path: "/*", element: <NotFound /> }, // Add a 404 route
 
         // ✅ Protected Routes
         {

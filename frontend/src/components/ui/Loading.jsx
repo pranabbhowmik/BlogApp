@@ -2,18 +2,48 @@ import React from "react";
 
 function Loading() {
   return (
-    <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md relative animate-pulse">
-      <div className="w-full h-48 bg-gray-300" />
+    <div className="bg-white border top-40 lg:px-64  border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:border-purple-500 transition-all duration-300 ease-in-out relative">
+      {/* Skeleton Loader for Image */}
+      <div className="w-3/4 h-6 bg-gray-300 animate-pulse mb-2"></div>
+      {/* Skeleton Loader for Author */}
+      <div className="w-32 h-3 bg-gray-300 animate-pulse mb-1"></div>
+      <div className="w-full h-48 bg-gray-300 animate-pulse"></div>
       <div className="p-4">
-        <div className="flex justify-between items-center mb-2">
-          <div className="h-4 w-20 bg-gray-300 rounded" />
-          <div className="h-3 w-12 bg-gray-300 rounded" />
-          <div className="h-5 w-5 bg-gray-300 rounded-full" />
+        <div className="flex justify-between items-center mb-2 relative">
+          {/* Skeleton Loader for Category */}
+          <div className="w-24 h-4 bg-gray-300 animate-pulse"></div>
+          {/* Skeleton Loader for Date */}
+          <div className="w-16 h-3 bg-gray-300 animate-pulse"></div>
         </div>
-        <div className="h-6 bg-gray-300 rounded mb-2 w-3/4" />
-        <div className="h-4 bg-gray-300 rounded mb-1 w-1/2" />
-        <div className="h-4 bg-gray-300 rounded mb-3 w-full" />
-        <div className="h-4 bg-gray-300 rounded w-24" />
+
+        {/* Skeleton Loader for Title */}
+        <div className="w-3/4 h-6 bg-gray-300 animate-pulse mb-2"></div>
+        {/* Skeleton Loader for Author */}
+        <div className="w-32 h-3 bg-gray-300 animate-pulse mb-1"></div>
+        {/* Skeleton Loader for Content */}
+        <div className="w-full h-12 bg-gray-300 animate-pulse mb-3"></div>
+        {/* Skeleton Loader for Read More Button */}
+        <div className="w-24 h-4 bg-gray-300 animate-pulse"></div>
+
+        <div className="flex justify-between items-center mt-4 border-t pt-2 text-gray-600 text-sm">
+          {/* Skeleton Loader for Like Button */}
+          <div className="flex items-center space-x-1">
+            <div className="w-6 h-6 bg-gray-300 animate-pulse rounded-full"></div>
+            <div className="w-12 h-3 bg-gray-300 animate-pulse"></div>
+          </div>
+
+          {/* Skeleton Loader for Comments Button */}
+          <div className="flex items-center space-x-1">
+            <div className="w-6 h-6 bg-gray-300 animate-pulse rounded-full"></div>
+            <div className="w-12 h-3 bg-gray-300 animate-pulse"></div>
+          </div>
+
+          {/* Skeleton Loader for Share Button */}
+          <div className="flex items-center space-x-1">
+            <div className="w-6 h-6 bg-gray-300 animate-pulse rounded-full"></div>
+            <div className="w-12 h-3 bg-gray-300 animate-pulse"></div>
+          </div>
+        </div>
       </div>
     </div>
   );
