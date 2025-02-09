@@ -36,7 +36,8 @@ function Account() {
   }, []);
 
   const handleLogout = () => {
-    setAuthUser(null); // Clear auth state // Remove user data
+    setAuthUser(null);
+    // Clear auth state // Remove user data
     navigate("/login"); // Redirect to login page
   };
 

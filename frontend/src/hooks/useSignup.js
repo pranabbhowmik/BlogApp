@@ -20,10 +20,17 @@ const useSignup = () => {
       const data = response.data;
       console.log("Signup response:", data);
 
-      if (response.status === 201) {
-        console.log("Signup Success");
+      if (response.status >= 200 && response.status < 300) {
         toast.success("Welcome to Zarrin!");
-        setAuthUser(data.token);
+
+        setAuthUser({
+          token: data.token,
+          user: data.newUser, // { name, email, etc. }
+        });
+
+        // Store in localStorage
+        localStorage.setItem("authUser", JSON.stringify(data));
+
         navigate("/");
       }
     } catch (error) {
