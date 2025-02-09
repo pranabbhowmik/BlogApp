@@ -1,9 +1,20 @@
 import React, { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import { EllipsisVertical, Edit, Trash2 } from "lucide-react";
+import {
+  EllipsisVertical,
+  Edit,
+  Trash2,
+  Heart,
+  MessageCircle,
+  Share2,
+} from "lucide-react";
+import { toast } from "react-toastify"; // Import react-toastify
 
 const PostCard = ({ post, onDelete }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [likes, setLikes] = useState(post.likes || 0);
+  const [liked, setLiked] = useState(false);
+  const [comments, setComments] = useState(post.comments || 0);
   const menuRef = useRef(null);
 
   const toggleMenu = () => {
@@ -19,6 +30,27 @@ const PostCard = ({ post, onDelete }) => {
   const handleDelete = () => {
     onDelete(post._id);
     setIsMenuOpen(false);
+  };
+
+  const handleLike = () => {
+    if (liked) {
+      setLikes(likes - 1);
+    } else {
+      setLikes(likes + 1);
+    }
+    setLiked(!liked);
+  };
+
+  const handleCopy = () => {
+    const url = window.location.origin + `/blog/${post._id}`; // Get the full URL
+    navigator.clipboard
+      .writeText(url)
+      .then(() => {
+        toast.success("Copy the URL Successfully!"); // Show toast message
+      })
+      .catch(() => {
+        toast.error("Failed to copy the URL.");
+      });
   };
 
   useEffect(() => {
@@ -68,6 +100,7 @@ const PostCard = ({ post, onDelete }) => {
             </div>
           )}
         </div>
+
         <h3 className="text-lg font-semibold mb-2 line-clamp-2 text-gray-800">
           {post.title}
         </h3>
@@ -80,6 +113,37 @@ const PostCard = ({ post, onDelete }) => {
             Read More...
           </button>
         </Link>
+
+        <div className="flex justify-between items-center mt-4 border-t pt-2 text-gray-600 text-sm">
+          <button
+            className={`flex items-center space-x-1 transition-transform duration-300 ${
+              liked ? "text-red-500 scale-110" : ""
+            }`}
+            onClick={handleLike}
+          >
+            <Heart
+              size={18}
+              className={`transition-transform duration-300 ${
+                liked ? "fill-red-500 scale-110" : ""
+              }`}
+            />
+            <span>{likes}</span>
+          </button>
+          <Link
+            to={`/blog/${post._id}#comments`}
+            className="flex items-center space-x-1 hover:text-blue-500"
+          >
+            <MessageCircle size={18} />
+            <span>{comments}</span>
+          </Link>
+          <button
+            onClick={handleCopy}
+            className="flex items-center space-x-1 hover:text-green-500"
+          >
+            <Share2 size={18} />
+            <span>Share</span>
+          </button>
+        </div>
       </div>
     </div>
   );
