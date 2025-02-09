@@ -32,7 +32,7 @@ function LandingPage() {
             <img
               src={ailogo}
               alt="AI Illustration"
-              className="w-full rounded-2xl h-[27rem] shadow-2xl"
+              className="w-full rounded-2xl lg:h-[27rem] shadow-2xl"
             />
           </div>
         </div>
