@@ -29,7 +29,7 @@ function Footer() {
                   fill="#7C4EE4"
                 />
               </svg>
-              <span className="text-xl font-bold">Zarrin</span>
+              <span className="text-xl font-bold">Freexpress</span>
             </div>
           </div>
 

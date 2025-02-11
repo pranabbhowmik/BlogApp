@@ -20,7 +20,7 @@ const useSignup = () => {
       const data = response.data;
 
       if (response.status >= 200 && response.status < 300) {
-        toast.success("Welcome to Zarrin!");
+        toast.success("Welcome to Freexpress!");
 
         setAuthUser({
           token: data.token,

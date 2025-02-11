@@ -25,7 +25,7 @@ function Navbar() {
             className="text-white text-2xl font-bold"
             onClick={handleNavItemClick}
           >
-            Zarrin
+            Freexpress
           </Link>
         </div>
 
