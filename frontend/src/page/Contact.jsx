@@ -2,8 +2,10 @@ import { useState } from "react";
 import Subscribe from "../components/ui/Subscribe";
 import { MapPin, Mail, Phone } from "lucide-react";
 import useContact from "../hooks/useContact.js";
+import ReCAPTCHA from "react-google-recaptcha";
 
 function Contact() {
+  const [verify, setVerify] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -30,6 +32,11 @@ function Contact() {
       ...formData,
       [e.target.name]: e.target.value,
     });
+  };
+
+  const onChange = (value) => {
+    console.log("Captcha value:", value);
+    setVerify(true);
   };
 
   return (
@@ -140,6 +147,10 @@ function Contact() {
                   required
                 ></textarea>
               </div>
+              <ReCAPTCHA
+                sitekey="6LfZGt4qAAAAAFEdivpSrg9wlu-O269ZZWR970sx"
+                onChange={onChange}
+              />
               <button
                 type="submit"
                 className="w-full bg-purple-600 text-white py-3 px-6 rounded-lg hover:bg-purple-700 hover:scale-105 transition-transform duration-300"
