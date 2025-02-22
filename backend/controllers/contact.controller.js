@@ -53,7 +53,7 @@ const Contactmessage = async (req, res) => {
 	<title></title>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"><!--[if mso]><xml><o:OfficeDocumentSettings><o:PixelsPerInch>96</o:PixelsPerInch><o:AllowPNG/></o:OfficeDocumentSettings></xml><![endif]--><!--[if !mso]><!-->
-	<link href="https://fonts.googleapis.com/css2?family=Permanent+Marker:wght@100;200;300;400;500;600;700;800;900" rel="stylesheet" type="text/css"><!--<![endif]-->
+	<link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet" type="text/css"><!--<![endif]-->
 	<style>
 		* {
 			box-sizing: border-box;
@@ -96,34 +96,13 @@ const Contactmessage = async (req, res) => {
 			line-height: 0;
 		}
 
-		#converted-body .list_block ul,
-		#converted-body .list_block ol,
-		.body [class~="x_list_block"] ul,
-		.body [class~="x_list_block"] ol,
-		u+.body .list_block ul,
-		u+.body .list_block ol {
-			padding-left: 20px;
-		}
-
-		@media (max-width:620px) {
-			.desktop_hide table.icons-inner {
-				display: inline-block !important;
-			}
-
-			.icons-inner {
-				text-align: center;
-			}
-
-			.icons-inner td {
-				margin: 0 auto;
+		@media (max-width:660px) {
+			.image_block div.fullWidth {
+				max-width: 100% !important;
 			}
 
 			.mobile_hide {
 				display: none;
-			}
-
-			.video_block .sizer {
-				max-width: none !important;
 			}
 
 			.row-content {
@@ -152,29 +131,72 @@ const Contactmessage = async (req, res) => {
 	</style><!--[if mso ]><style>sup, sub { font-size: 100% !important; } sup { mso-text-raise:10% } sub { mso-text-raise:-10% }</style> <![endif]-->
 </head>
 
-<body class="body" style="background-color: #ffffff; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
-	<table class="nl-container" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #ffffff;">
+<body class="body" style="background-color: #FFFFFF; margin: 0; padding: 0; -webkit-text-size-adjust: none; text-size-adjust: none;">
+	<table class="nl-container" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #FFFFFF;">
 		<tbody>
 			<tr>
 				<td>
-					<table class="row row-1" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+					<table class="row row-1" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #383029; background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/transparent-texture-bg__2___1_.png'); background-repeat: repeat;">
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 600px; margin: 0 auto;" width="600">
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
 										<tbody>
 											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top;">
-													<table class="icons_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; text-align: center; line-height: 0;">
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 60px; padding-left: 25px; padding-right: 25px; padding-top: 60px; vertical-align: top;">
+													<table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
-															<td class="pad" style="vertical-align: middle; color: #1e0e4b; font-family: 'Permanent Marker', Impact, Charcoal, sans-serif; font-size: 20px; padding-bottom: 5px; padding-top: 5px; text-align: center;"><!--[if vml]><table align="center" cellpadding="0" cellspacing="0" role="presentation" style="display:inline-block;padding-left:0px;padding-right:0px;mso-table-lspace: 0pt;mso-table-rspace: 0pt;"><![endif]-->
-																<!--[if !vml]><!-->
-																<table class="icons-inner" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; display: inline-block; padding-left: 0px; padding-right: 0px;" cellpadding="0" cellspacing="0" role="presentation"><!--<![endif]-->
-																	<tr>
-																		<td style="vertical-align: middle; text-align: center; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 6px;"><a href="http://designedwithbeefree.com/" target="_blank" style="text-decoration: none;"><img class="icon" alt="Just Cheers" src="https://1f773cf0dc.imgdist.com/pub/bfra/odzf5l2d/8n3/he2/6cv/logo.png" height="auto" width="71" align="center" style="display: block; height: auto; margin: 0 auto; border: 0;"></a></td>
-																		<td style="font-family: 'Permanent Marker', Impact, Charcoal, sans-serif; font-size: 20px; font-weight: undefined; color: #1e0e4b; vertical-align: middle; letter-spacing: undefined; text-align: center; line-height: normal;"><a href="http://designedwithbeefree.com/" target="_blank" style="color: #1e0e4b; text-decoration: none;">Welcome To Just Cheers</a></td>
-																	</tr>
-																</table>
+															<td class="pad" style="text-align:center;width:100%;">
+																<h1 style="margin: 0; color: #ffffff; direction: ltr; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-size: 27px; font-weight: normal; letter-spacing: 1px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 32.4px;">OKTOBERFEST</h1>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad">
+																<div style="color:#f8d888;font-family:'Bitter',Georgia,Times,'Times New Roman',serif;font-size:88px;letter-spacing:-1px;line-height:120%;text-align:center;mso-line-height-alt:105.6px;">
+																	<p style="margin: 0; word-break: break-word;"><span style="word-break: break-word;">SALE</span></p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="image_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:5px;width:100%;padding-right:0px;padding-left:0px;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div class="fullWidth" style="max-width: 324.5px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/Group.png" style="display: block; height: auto; border: 0; width: 100%;" width="324.5" alt title height="auto"></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:30px;">
+																<div style="color:#ffffff;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:22px;letter-spacing:0px;line-height:120%;text-align:center;mso-line-height-alt:26.4px;">
+																	<p style="margin: 0; word-break: break-word;"><span style="word-break: break-word;">Get up 15% OFF</span></p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="image_block block-5" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:25px;width:100%;padding-right:0px;padding-left:0px;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 295px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/ezgif.com-gif-maker__5_.gif" style="display: block; height: auto; border: 0; width: 100%;" width="295" alt="Beer" title="Beer" height="auto"></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block block-6" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:40px;text-align:center;">
+																<div class="alignment" align="center"><a href="http://www.example.com/" target="_blank" style="color:#ffffff;text-decoration:none;"><!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"  href="http://www.example.com/"  style="height:54px;width:161px;v-text-anchor:middle;" arcsize="8%" fillcolor="#e44500">
+<v:stroke dashstyle="Solid" weight="0px" color="#e44500"/>
+<w:anchorlock/>
+<v:textbox inset="0px,0px,0px,0px">
+<center dir="false" style="color:#ffffff;font-family:sans-serif;font-size:22px">
+<![endif]--><span class="button" style="background-color: #e44500; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; display: inline-block; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-size: 22px; font-weight: undefined; mso-border-alt: none; padding-bottom: 5px; padding-top: 5px; padding-left: 25px; padding-right: 25px; text-align: center; width: auto; word-break: keep-all; letter-spacing: 1px;"><span style="word-break: break-word;"><span style="word-break: break-word; line-height: 44px;" data-mce-style>BUY NOW</span></span></span><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></a></div>
 															</td>
 														</tr>
 													</table>
@@ -190,58 +212,357 @@ const Contactmessage = async (req, res) => {
 						<tbody>
 							<tr>
 								<td>
-									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 600px; margin: 0 auto;" width="600">
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
 										<tbody>
 											<tr>
-												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 5px; padding-top: 5px; vertical-align: top;">
-													<table class="list_block block-1" width="100%" border="0" cellpadding="10" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word; color: #101112; direction: ltr; font-family: Arial, Helvetica, sans-serif; font-size: 16px; font-weight: 700; letter-spacing: 0px; line-height: 120%; text-align: left; mso-line-height-alt: 19.2px;">
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
+													<div class="spacer_block block-1" style="height:30px;line-height:30px;font-size:1px;">&#8202;</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-3" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; padding-top: 25px; vertical-align: top;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
-															<td class="pad">
-																<div style="margin-left:-20px">
-																	<ul style="margin-top: 0; margin-bottom: 0; list-style-type: revert;">
-																		<li style="Margin: 0 0 0 0;"><em>Integrated Stripe for seamless online payments</em></li>
-																		<li style="Margin: 0 0 0 0;"><em>Set up for alcohol delivery within 20 minutes</em></li>
-																	</ul>
+															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 65.333px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/quality-badge-star_1.png" style="display: block; height: auto; border: 0; width: 100%;" width="65.333" alt="First" title="First" height="auto"></div>
 																</div>
 															</td>
 														</tr>
 													</table>
-													<table class="image_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:15px;text-align:center;width:100%;">
+																<h3 style="margin: 0; color: #201616; direction: ltr; font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif; font-size: 20px; font-weight: normal; letter-spacing: 1px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><strong>LOREM IPSUM</strong></h3>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:10px;">
+																<div style="color:#393d47;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:120%;text-align:center;mso-line-height-alt:19.2px;">
+																	<p style="margin: 0; word-break: break-word;"><span style="word-break: break-word;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></p>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column column-2" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; padding-top: 25px; vertical-align: top;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 55.533px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/water_1.png" style="display: block; height: auto; border: 0; width: 100%;" width="55.533" alt="Second" title="Second" height="auto"></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:15px;text-align:center;width:100%;">
+																<h3 style="margin: 0; color: #201616; direction: ltr; font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif; font-size: 20px; font-weight: normal; letter-spacing: 1px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><strong>LOREM IPSUM</strong></h3>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:10px;">
+																<div style="color:#393d47;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:120%;text-align:center;mso-line-height-alt:19.2px;">
+																	<p style="margin: 0; word-break: break-word;"><span style="word-break: break-word;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></p>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column column-3" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; padding-top: 25px; vertical-align: top;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="width:100%;padding-right:0px;padding-left:0px;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 65.333px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/hand_1.png" style="display: block; height: auto; border: 0; width: 100%;" width="65.333" alt="Third" title="Third" height="auto"></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:15px;text-align:center;width:100%;">
+																<h3 style="margin: 0; color: #201616; direction: ltr; font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif; font-size: 20px; font-weight: normal; letter-spacing: 1px; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 24px;"><strong>LOREM IPSUM</strong></h3>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:10px;">
+																<div style="color:#393d47;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:120%;text-align:center;mso-line-height-alt:19.2px;">
+																	<p style="margin: 0; word-break: break-word;"><span style="word-break: break-word;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</span></p>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-4" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
+													<div class="spacer_block block-1" style="height:40px;line-height:40px;font-size:1px;">&#8202;</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-5" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff1e0; background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/transparent-texture-bg__2___1_.png'); background-repeat: repeat;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; padding-top: 60px; vertical-align: top;">
+													<table class="heading_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="text-align:center;width:100%;">
+																<h2 style="margin: 0; color: #383029; direction: ltr; font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif; font-size: 42px; font-weight: normal; letter-spacing: normal; line-height: 120%; text-align: center; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 50.4px;"><strong>OUR BEER</strong></h2>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:10px;">
+																<div style="color:#393d47;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:20px;line-height:120%;text-align:center;mso-line-height-alt:24px;">
+																	<p style="margin: 0;">Discover a vast selection of craft beers on our app, perfect for any occasion. Enjoy quick delivery, unbeatable prices, and the finest brews right at your doorstep.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-6" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff1e0; background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/transparent-texture-bg__2___1_.png'); background-repeat: repeat;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; padding-top: 25px; vertical-align: top;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
 														<tr>
 															<td class="pad" style="width:100%;">
 																<div class="alignment" align="center" style="line-height:10px">
-																	<div style="max-width: 600px;"><img src="https://d15k2d11r6t6rl.cloudfront.net/pub/bfra/odzf5l2d/46p/qsb/0he/1.png" style="display: block; height: auto; border: 0; width: 100%;" width="600" alt title height="auto"></div>
+																	<div style="max-width: 163.333px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/3.png" style="display: block; height: auto; border: 0; width: 100%;" width="163.333" alt="First beer" title="First beer" height="auto"></div>
 																</div>
 															</td>
 														</tr>
 													</table>
-													<table class="video_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
-														<tr style="box-sizing: content-box;">
-															<td class="pad" style="box-sizing: content-box; width: 100%; padding-left: 0; padding-right: 0;" width="100%"><!--[if (mso)|(IE)]><table width="600" align="center" cellpadding="0" cellspacing="0" role="presentation"><tr><td><![endif]-->
-																<div class="sizer" align="center" style="box-sizing: content-box; max-width: 600px; min-width: 320px;"><!--[if !vml]><!--><a class="video-preview" tabindex="0" href="https://www.youtube.com/watch?v=S6Ss7nfXTWM" target="_blank" title="justcheers" style="box-sizing: content-box; background-color: #5b5f66; background-image: radial-gradient(circle at center, #5b5f66, #1d1f21); display: block; text-decoration: none;">
-																		<div style="box-sizing: content-box;">
-																			<table cellpadding="0" cellspacing="0" border="0" width="100%" background="https://img.youtube.com/vi/S6Ss7nfXTWM/0.jpg" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; box-sizing: content-box; background-image: url(https://img.youtube.com/vi/S6Ss7nfXTWM/0.jpg); background-size: cover; background-position: center; min-height: 240px; min-width: 320px;">
-																				<tr style="box-sizing: content-box;">
-																					<td width="25%" style="box-sizing: content-box;"><img src="https://app-rsrc.getbee.io/public/resources/multiparser/video_block/video_ratio_4-3.gif" alt="ratio" width="100%" border="0" style="display: block; box-sizing: content-box; height: auto; opacity: 0; visibility: hidden;" height="auto"></td>
-																					<td width="50%" align="center" valign="middle" style="box-sizing: content-box; vertical-align: middle;"><img src="https://app-rsrc.getbee.io/public/resources/components/widgetBar/video-content-icon-sets/dark/type-02.png" width="65" height="auto" style="display: block; height: auto; box-sizing: content-box;"></td>
-																					<td width="25%" style="box-sizing: content-box;">&#160;</td>
-																				</tr>
-																			</table>
-																		</div>
-																	</a><!--<![endif]--><!--[if vml]>
-<v:group xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" coordsize="600,450" coordorigin="0,0" href="https://www.youtube.com/watch?v=S6Ss7nfXTWM" style="width:600px;height:450px;">
-<v:rect fill="t" stroked="f" style="position:absolute;width:600;height:450;">
-<v:fill src="https://img.youtube.com/vi/S6Ss7nfXTWM/0.jpg" type="frame"/>
-</v:rect>
-<v:oval fill="t" strokecolor="#000000" strokeweight="3px" style="position:absolute;left:268;top:193;width:65;height:65">
-<v:fill color="black" opacity="0%" />
-</v:oval>
-<v:shape coordsize="24,32" path="m,l,32,24,16,xe" fillcolor="#000000" stroked="f" style="position:absolute;left:291;top:209;width:23;height:33;" />
-</v:group>
-<![endif]--></div><!--[if (mso)|(IE)]></td></tr></table><![endif]-->
+													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:25px;text-align:center;width:100%;">
+																<h3 style="margin: 0; color: #201616; direction: ltr; font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif; font-size: 22px; font-weight: normal; letter-spacing: 1px; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 26.4px;"><strong>Heineken Silver Beer</strong></h3>
 															</td>
 														</tr>
 													</table>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:15px;">
+																<div style="color:#393d47;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:120%;text-align:left;mso-line-height-alt:19.2px;">
+																	<p style="margin: 0;">Heineken Silver Beer offers a refreshing twist on the classic lager, boasting a smoother taste and lighter body. It is crafted with quality ingredients, ideal for casual gatherings and celebrations alike. Enjoy it chilled.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:25px;text-align:left;">
+																<div class="alignment" align="left"><a href="https://just-cheers.onrender.com/" target="_blank" style="color:#ffffff;text-decoration:none;"><!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"  href="https://just-cheers.onrender.com/"  style="height:42px;width:155px;v-text-anchor:middle;" arcsize="10%" fillcolor="#e30000">
+<v:stroke dashstyle="Solid" weight="0px" color="#e30000"/>
+<w:anchorlock/>
+<v:textbox inset="0px,0px,0px,0px">
+<center dir="false" style="color:#ffffff;font-family:sans-serif;font-size:16px">
+<![endif]--><span class="button" style="background-color: #e30000; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; display: inline-block; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-size: 16px; font-weight: undefined; mso-border-alt: none; padding-bottom: 5px; padding-top: 5px; padding-left: 20px; padding-right: 20px; text-align: center; width: auto; word-break: keep-all; letter-spacing: 1px;"><span style="word-break: break-word;"><span style="word-break: break-word; line-height: 32px;" data-mce-style>LEARN MORE</span></span></span><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></a></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column column-2" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; padding-top: 25px; vertical-align: top;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="width:100%;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 163.333px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/4.png" style="display: block; height: auto; border: 0; width: 100%;" width="163.333" alt="Second beer" title="Second beer" height="auto"></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:25px;text-align:center;width:100%;">
+																<h3 style="margin: 0; color: #201616; direction: ltr; font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif; font-size: 22px; font-weight: normal; letter-spacing: 1px; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 26.4px;"><strong>Bee young Crafted Strong</strong></h3>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:15px;">
+																<div style="color:#393d47;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:120%;text-align:left;mso-line-height-alt:19.2px;">
+																	<p style="margin: 0;">Bee young Crafted Strong 29 words: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:25px;text-align:left;">
+																<div class="alignment" align="left"><a href="https://just-cheers.onrender.com/" target="_blank" style="color:#ffffff;text-decoration:none;"><!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"  href="https://just-cheers.onrender.com/"  style="height:42px;width:155px;v-text-anchor:middle;" arcsize="10%" fillcolor="#e30000">
+<v:stroke dashstyle="Solid" weight="0px" color="#e30000"/>
+<w:anchorlock/>
+<v:textbox inset="0px,0px,0px,0px">
+<center dir="false" style="color:#ffffff;font-family:sans-serif;font-size:16px">
+<![endif]--><span class="button" style="background-color: #e30000; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; display: inline-block; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-size: 16px; font-weight: undefined; mso-border-alt: none; padding-bottom: 5px; padding-top: 5px; padding-left: 20px; padding-right: 20px; text-align: center; width: auto; word-break: keep-all; letter-spacing: 1px;"><span style="word-break: break-word;"><span style="word-break: break-word; line-height: 32px;" data-mce-style>LEARN MORE</span></span></span><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></a></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+												<td class="column column-3" width="33.333333333333336%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; padding-bottom: 25px; padding-left: 25px; padding-right: 25px; padding-top: 25px; vertical-align: top;">
+													<table class="image_block block-1" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="width:100%;">
+																<div class="alignment" align="center" style="line-height:10px">
+																	<div style="max-width: 163.333px;"><img src="https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/2.png" style="display: block; height: auto; border: 0; width: 100%;" width="163.333" alt="Third beer" title="Third beer" height="auto"></div>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="heading_block block-2" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:25px;text-align:center;width:100%;">
+																<h3 style="margin: 0; color: #201616; direction: ltr; font-family: 'Bitter', Georgia, Times, 'Times New Roman', serif; font-size: 22px; font-weight: normal; letter-spacing: 1px; line-height: 120%; text-align: left; margin-top: 0; margin-bottom: 0; mso-line-height-alt: 26.4px;"><strong>Kingfisher Ultra Max</strong></h3>
+															</td>
+														</tr>
+													</table>
+													<table class="paragraph_block block-3" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; word-break: break-word;">
+														<tr>
+															<td class="pad" style="padding-top:15px;">
+																<div style="color:#393d47;font-family:Arial, Helvetica Neue, Helvetica, sans-serif;font-size:16px;line-height:120%;text-align:left;mso-line-height-alt:19.2px;">
+																	<p style="margin: 0;">Amet ipsum dolor sit, consectetur adipiscing elit. Eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+																</div>
+															</td>
+														</tr>
+													</table>
+													<table class="button_block block-4" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+														<tr>
+															<td class="pad" style="padding-top:25px;text-align:left;">
+																<div class="alignment" align="left"><a href="https://just-cheers.onrender.com/" target="_blank" style="color:#ffffff;text-decoration:none;"><!--[if mso]>
+<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word"  href="https://just-cheers.onrender.com/"  style="height:42px;width:155px;v-text-anchor:middle;" arcsize="10%" fillcolor="#e30000">
+<v:stroke dashstyle="Solid" weight="0px" color="#e30000"/>
+<w:anchorlock/>
+<v:textbox inset="0px,0px,0px,0px">
+<center dir="false" style="color:#ffffff;font-family:sans-serif;font-size:16px">
+<![endif]--><span class="button" style="background-color: #e30000; border-bottom: 0px solid transparent; border-left: 0px solid transparent; border-radius: 4px; border-right: 0px solid transparent; border-top: 0px solid transparent; color: #ffffff; display: inline-block; font-family: Arial, Helvetica Neue, Helvetica, sans-serif; font-size: 16px; font-weight: undefined; mso-border-alt: none; padding-bottom: 5px; padding-top: 5px; padding-left: 20px; padding-right: 20px; text-align: center; width: auto; word-break: keep-all; letter-spacing: 1px;"><span style="word-break: break-word;"><span style="word-break: break-word; line-height: 32px;" data-mce-style>LEARN MORE</span></span></span><!--[if mso]></center></v:textbox></v:roundrect><![endif]--></a></div>
+															</td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-7" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #fff1e0; background-image: url('https://d1oco4z2z1fhwp.cloudfront.net/templates/default/4701/transparent-texture-bg__2___1_.png'); background-repeat: repeat;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
+													<div class="spacer_block block-1" style="height:50px;line-height:50px;font-size:1px;">&#8202;</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-8" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
+													<div class="spacer_block block-1" style="height:50px;line-height:50px;font-size:1px;">&#8202;</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-9" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
+													<div class="spacer_block block-1" style="height:50px;line-height:50px;font-size:1px;">&#8202;</div>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+					<table class="row row-10" align="center" width="100%" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; background-color: #383029;">
+						<tbody>
+							<tr>
+								<td>
+									<table class="row-content stack" align="center" border="0" cellpadding="0" cellspacing="0" role="presentation" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; color: #000000; width: 640px; margin: 0 auto;" width="640">
+										<tbody>
+											<tr>
+												<td class="column column-1" width="100%" style="mso-table-lspace: 0pt; mso-table-rspace: 0pt; font-weight: 400; text-align: left; vertical-align: top;">
+													<div class="spacer_block block-1" style="height:50px;line-height:50px;font-size:1px;">&#8202;</div>
 												</td>
 											</tr>
 										</tbody>
