@@ -8,57 +8,39 @@ import {
   MessageCircle,
   Share2,
 } from "lucide-react";
-import { toast } from "react-toastify"; // Import react-toastify
+import { toast } from "react-toastify";
+import useLike from "../../hooks/useLike.js"; // Import useLike hook
 
 const PostCard = ({ post, onDelete }) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [likes, setLikes] = useState(post.likes || 0);
+  const { like, fetchLikes, likeData } = useLike();
   const [liked, setLiked] = useState(false);
-  const [comments, setComments] = useState(post.comments || 0);
   const menuRef = useRef(null);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  useEffect(() => {
+    fetchLikes(post._id);
+  }, [post._id]);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const handleClickOutside = (event) => {
-    if (menuRef.current && !menuRef.current.contains(event.target)) {
-      setIsMenuOpen(false);
-    }
-  };
-
-  const handleDelete = () => {
-    onDelete(post._id);
-    setIsMenuOpen(false);
-  };
-
-  const handleLike = () => {
-    if (liked) {
-      setLikes(likes - 1);
-    } else {
-      setLikes(likes + 1);
-    }
+  const handleLike = async () => {
+    await like(post._id);
     setLiked(!liked);
   };
 
   const handleCopy = () => {
-    const url = window.location.origin + `/blog/${post._id}`; // Get the full URL
+    const url = window.location.origin + `/blog/${post._id}`;
     navigator.clipboard
       .writeText(url)
       .then(() => {
-        toast.success("Copy the URL Successfully!"); // Show toast message
+        toast.success("Copied the URL Successfully!");
       })
       .catch(() => {
         toast.error("Failed to copy the URL.");
       });
   };
-
-  useEffect(() => {
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
 
   return (
     <div className="bg-white border border-gray-200 rounded-lg overflow-hidden shadow-md hover:shadow-xl hover:border-purple-500 transition-all duration-300 ease-in-out relative">
@@ -68,10 +50,7 @@ const PostCard = ({ post, onDelete }) => {
         className="w-full h-48 object-cover"
       />
       <div className="p-4">
-        <div
-          className="flex justify-between items-center mb-2 relative"
-          ref={menuRef}
-        >
+        <div className="flex justify-between items-center mb-2 relative">
           <span className="text-sm text-purple-600 font-medium">
             {post.category}
           </span>
@@ -92,7 +71,7 @@ const PostCard = ({ post, onDelete }) => {
               </Link>
               <hr />
               <button
-                onClick={handleDelete}
+                onClick={() => onDelete(post._id)}
                 className="flex items-center w-full px-3 py-2 hover:bg-gray-100 text-red-600"
               >
                 <Trash2 size={16} className="mr-2" /> Delete
@@ -108,34 +87,26 @@ const PostCard = ({ post, onDelete }) => {
         <p className="text-gray-600 text-sm mb-3 line-clamp-3">
           {post.content}
         </p>
-        <Link to={`/blog/${post._id}`}>
-          <button className="text-purple-600 text-sm font-medium hover:text-purple-800 transition-colors">
-            Read More...
-          </button>
-        </Link>
 
         <div className="flex justify-between items-center mt-4 border-t pt-2 text-gray-600 text-sm">
           <button
-            className={`flex items-center space-x-1 transition-transform duration-300 ${
-              liked ? "text-red-500 scale-110" : ""
+            className={`flex items-center space-x-1 ${
+              liked ? "text-red-500" : ""
             }`}
             onClick={handleLike}
           >
-            <Heart
-              size={18}
-              className={`transition-transform duration-300 ${
-                liked ? "fill-red-500 scale-110" : ""
-              }`}
-            />
-            <span>{likes}</span>
+            <Heart size={18} className={liked ? "fill-red-500" : ""} />
+            <span>{likeData.likeCount}</span>
           </button>
+
           <Link
             to={`/blog/${post._id}#comments`}
             className="flex items-center space-x-1 hover:text-blue-500"
           >
             <MessageCircle size={18} />
-            <span>{comments}</span>
+            <span>{post.comments || 0}</span>
           </Link>
+
           <button
             onClick={handleCopy}
             className="flex items-center space-x-1 hover:text-green-500"
@@ -144,6 +115,13 @@ const PostCard = ({ post, onDelete }) => {
             <span>Share</span>
           </button>
         </div>
+
+        <p className="text-xs text-gray-500 mt-2">
+          Liked by:{" "}
+          {likeData.likedUsers?.length
+            ? likeData.likedUsers.join(", ")
+            : "No likes yet"}
+        </p>
       </div>
     </div>
   );

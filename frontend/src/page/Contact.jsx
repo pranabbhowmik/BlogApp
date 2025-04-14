@@ -148,7 +148,7 @@ function Contact() {
                 ></textarea>
               </div>
               <ReCAPTCHA
-                sitekey="6LfZGt4qAAAAAFEdivpSrg9wlu-O269ZZWR970sx"
+                sitekey="6LeIxAcTAAAAAJcZVRqyHh71UMIEGNQ_MXjiZKhI"
                 onChange={onChange}
               />
               <button

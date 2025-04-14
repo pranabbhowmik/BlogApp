@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import authrouter from "./routers/user.router.js";
 import router from "./routers/blog.router.js";
 import contactRouter from "./routers/contact.router.js";
+import likeRouter from "./routers/like.router.js";
 
 const app = express();
 
@@ -21,5 +22,5 @@ app.get("/", (req, res) => {
 app.use("/api/auth", authrouter);
 app.use("/api/blog", router);
 app.use("/api/mail", contactRouter);
-
+app.use("/api/post", likeRouter);
 export default app;
