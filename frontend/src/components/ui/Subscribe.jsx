@@ -12,9 +12,6 @@ function Subscribe() {
 
   return (
     <div className="min-h-full flex flex-col">
-      <div className="absolute inset-0 opacity-10"></div>
-      {/* Newsletter Section */}
-
       <div className="flex-1 bg-[#8A3FFC] px-4 py-16 flex flex-col items-center justify-center relative overflow-hidden">
         <div className="max-w-3xl mx-auto text-center z-10">
           <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-8 leading-tight">

@@ -79,10 +79,11 @@ const PostCard = ({ post, onDelete }) => {
             </div>
           )}
         </div>
-
-        <h3 className="text-lg font-semibold mb-2 line-clamp-2 text-gray-800">
-          {post.title}
-        </h3>
+        <Link to={`/blog/${post._id}`}>
+          <h3 className="text-lg font-semibold mb-2 line-clamp-2 text-gray-800">
+            {post.title}
+          </h3>
+        </Link>
         <p className="text-gray-500 text-sm mb-1">By {post.author}</p>
         <p className="text-gray-600 text-sm mb-3 line-clamp-3">
           {post.content}
